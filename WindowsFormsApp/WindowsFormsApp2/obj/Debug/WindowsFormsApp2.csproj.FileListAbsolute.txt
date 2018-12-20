@@ -19,3 +19,24 @@ C:\Users\Hacioglu3\Desktop\görüntü işleme\proje1\WindowsFormsApp2\WindowsFor
 C:\Users\Hacioglu3\Desktop\görüntü işleme\proje1\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
 C:\Users\Hacioglu3\Desktop\görüntü işleme\proje1\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\Hacioglu3\Desktop\görüntü işleme\proje1\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\bin\Debug\AForge.dll
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\bin\Debug\AForge.Imaging.dll
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\bin\Debug\AForge.Math.dll
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\bin\Debug\AForge.Video.dll
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\bin\Debug\AForge.xml
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\bin\Debug\AForge.Imaging.xml
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\bin\Debug\AForge.Math.xml
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\bin\Debug\AForge.Video.xml
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojAssemblyReference.cache
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Hacioglu3\Desktop\Project\WindowsFormsApp\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb

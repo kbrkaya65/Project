@@ -42,7 +42,7 @@ namespace WindowsFormsApp2
             }
             comboBox1.SelectedIndex = 0;
             comboBox2.DataSource = SerialPort.GetPortNames();
-            button4.Enabled = false;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,7 +50,7 @@ namespace WindowsFormsApp2
             Finalvideo = new VideoCaptureDevice(VideoCapTureDevices[comboBox1.SelectedIndex].MonikerString);
             Finalvideo.NewFrame += new NewFrameEventHandler(Finalvideo_NewFrame);
             Finalvideo.DesiredFrameRate = 20;
-            Finalvideo.DesiredFrameSize = new Size(320,240);
+            Finalvideo.DesiredFrameSize = new Size(390,390);
             Finalvideo.Start();
         }
         private void Finalvideo_NewFrame(object sender, NewFrameEventArgs eventArgs)
@@ -61,34 +61,11 @@ namespace WindowsFormsApp2
             image1.RotateFlip(RotateFlipType.RotateNoneFlipX);
             pictureBox1.Image = image;
 
-            if (radioButton1.Checked)
-            {
-                EuclideanColorFiltering filter = new EuclideanColorFiltering();
-                filter.CenterColor = new RGB(Color.FromArgb(215, 0, 0));
-                filter.Radius = 100;
-                filter.ApplyInPlace(image1);
-                
-                nesnebul(image1);
-            }
-
-            if (radioButton2.Checked)
-            {
-                EuclideanColorFiltering filter = new EuclideanColorFiltering();
-                filter.CenterColor = new RGB(Color.FromArgb(0, 215, 0));
-                filter.Radius = 100;
-                filter.ApplyInPlace(image1);
-
-            }
-            if (radioButton3.Checked)
-            {
-                EuclideanColorFiltering filter = new EuclideanColorFiltering();
-                filter.CenterColor = new RGB(Color.FromArgb(30, 144, 255));
-                filter.Radius = 100;
-                filter.ApplyInPlace(image1);
-
-                nesnebul(image1);
-
-            }
+            EuclideanColorFiltering filter = new EuclideanColorFiltering();
+            filter.CenterColor = new RGB(Color.FromArgb(R, G, B));
+            filter.Radius = 100;
+            filter.ApplyInPlace(image1);
+            nesnebul(image1);
             
         }
         public void nesnebul(Bitmap image)
@@ -120,39 +97,39 @@ namespace WindowsFormsApp2
                 int objectY = objectRect.Y + (objectRect.Height / 2);
                 g.Dispose();
 
-                if (objectX > 0 && objectX < 106 && objectY < 80)
+                if (objectX < 130 && objectY < 130)
                 {
                     pin = 1;
                 }
-                if (objectX > 106 && objectX < 212 && objectY < 80)
+                if (objectX > 130 && objectX < 260 && objectY < 130)
                 {
                     pin = 2;
                 }
-                if (objectX > 212 && objectX < 320 && objectY < 80)
+                if (objectX > 260 && objectX < 390 && objectY < 130)
                 {
                     pin = 3;
                 }
-                if (objectX > 0 && objectX < 106 && objectY > 80 && objectY < 160)
+                if (objectX > 0 && objectX < 130 && objectY > 130 && objectY < 260)
                 {
                     pin = 4;
                 }
-                if (objectX > 106 && objectX < 212 && objectY > 80 && objectY < 160)
+                if (objectX > 130 && objectX < 260 && objectY > 130 && objectY < 260)
                 {
                     pin = 5;
                 }
-                if (objectX > 212 && objectX < 320 && objectY > 80 && objectY < 160)
+                if (objectX > 260 && objectX < 390 && objectY > 130 && objectY < 260)
                 {
                     pin = 6;
                 }
-                if (objectX > 0 && objectX < 106 && objectY > 160 && objectY < 240)
+                if (objectX > 0 && objectX < 130 && objectY > 260 && objectY < 390)
                 {
                     pin = 7;
                 }
-                if (objectX > 106 && objectX < 212 && objectY > 160 && objectY < 240)
+                if (objectX > 130 && objectX < 260 && objectY > 260 && objectY < 390)
                 {
                     pin = 8;
                 }
-                if (objectX > 212 && objectX < 320 && objectY > 160 && objectY < 240)
+                if (objectX > 260 && objectX < 390 && objectY > 260 && objectY < 390)
                 {
                     pin = 9;
                 }
@@ -186,9 +163,24 @@ namespace WindowsFormsApp2
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
+            serialPort1.Close();
+        }
 
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            R = trackBar1.Value;
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            G = trackBar2.Value;
+        }
+
+        private void trackBar3_Scroll(object sender, EventArgs e)
+        {
+            B = trackBar3.Value;
         }
     }
 }
